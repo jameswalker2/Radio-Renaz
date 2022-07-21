@@ -1,6 +1,97 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: inter;
+    src: url(Fonts/Inter-Medium.ttf);
 }
 
+body {
+    position: relative;
+    background: rgb(36,0,0);
+    background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(121,9,9,1) 51%, rgba(210,22,22,1) 100%);
+}
+
+.menubar {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ h1 {
+    color: #fff;
+    font-family: sintony;
+    cursor: pointer;
+ }
+ h1:hover {
+    color:#000
+ }
+
+ .menubar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 40px;
+
+ }
+
+ .menubar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: inter;
+    font-size: 18px;
+ }
+
+ .menubar ul li a:hover {
+color:#000
+ }
+
+ p {
+    color: #fff;
+    font-family:'Sintony', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin: 150px 80px
+ }
+
+
+ .box1{
+    position: absolute;
+    left: 60%;
+    top: 200px;
+    width: 25%;
+    height: 25vw;
+    background-color: gray;
+    border-radius: 10%;
+    z-index: 3;
+ } 
+ .box2{
+    position: absolute;
+    left: 80%;
+    top: 300px;
+    width: 15%;
+    height: 15vw;
+    background-color: gray;
+    border-radius: 10%;
+    z-index: 2;
+ }
+ .box3{
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    width: 15%;
+    height: 15vw;
+    background-color: gray;
+    border-radius: 10%;
+    z-index: 1;
+ } 
+
+.box-player {
+    position: relative;
+    bottom: 100px;
+    left: 10%;
+    width: 20%;
+    height: 10vw;
+    border-radius: 30px;
+    background-color: rgba(255, 173, 13, 1);
+} 
