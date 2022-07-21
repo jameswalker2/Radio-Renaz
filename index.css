@@ -2,118 +2,111 @@
     font-family: inter;
     src: url(Fonts/Inter-Medium.ttf);
 }
+@font-face {
+    font-family: sintony;
+    src: url("Fonts/Sintony-Bold.ttf");
+}
 
 body {
-    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
     background: rgb(36,0,0);
     background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(121,9,9,1) 51%, rgba(210,22,22,1) 100%);
 }
 
-.menubar {
-    width: 85%;
-    margin: auto;
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- }
-
- h1 {
-     color: #fff;
-     font-family: 'Sintony', sans empattement, serif;
-     cursor: pointer;
- }
- h1:hover {
-    color:#000
- }
-
- .menubar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 40px;
-
- }
-
- .menubar ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-family: inter, sans-serif;
-    font-size: 18px;
- }
-
- .menubar ul li a:hover {
-color:#000
- }
-
- p {
-    color: #fff;
-    font-family:'Sintony', sans-serif;
-    font-weight: 700;
-    font-size: 80px;
-    text-transform: uppercase;
-    margin: 150px 80px
- }
-
-
- .box1{
-    position: absolute;
-    left: 60%;
-    top: 200px;
-    width: 25%;
-    height: 25vw;
-    background-color: gray;
-    border-radius: 10%;
-    z-index: 3;
- } 
- .box2{
-    position: absolute;
-    left: 80%;
-    top: 300px;
-    width: 15%;
-    height: 15vw;
-    background-color: gray;
-    border-radius: 10%;
-    z-index: 2;
- }
- .box3{
-    position: absolute;
-    left: 50%;
-    top: 100px;
-    width: 15%;
-    height: 15vw;
-    background-color: gray;
-    border-radius: 10%;
-    z-index: 1;
- } 
-
-.box-player {
-    position: relative;
-    bottom: 100px;
-    left: 10%;
-    width: 20%;
-    height: 10vw;
-    border-radius: 30px;
-    background-color: rgba(255, 173, 13, 1);
+header {
+    height: 30vh;
+    text-align: center;
+    color: #ffff;
 }
 
-.fa-play {
-    position: absolute;
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header nav a {
     color: #fff;
-    font-size: 50px;
-    margin: 80px 130px;
+    text-decoration: none;
+    margin: 40px;
+    font-family: inter, serif;
+}
+header nav a:hover {
+    color: #000
+}
+.menubar {
+    margin: 35px 50px;
+    font-size: 20px;
+}
+.tag {
+    margin: 30px;
+    font-size: 30px;
+    font-family: 'Sintony', sans empattement, serif;
     cursor: pointer;
 }
-.fa-volume-high {
-    position: absolute;
+.tag:hover {
+    color: #000
+}
+
+.section {
     color: #fff;
-    font-size: 20px;
-    margin: 25px 250px;
-
+    margin: 40px;
+    font-family: Sintony,serif;
 }
-.fa-volume-low {
+.section h1 {
+    margin: 0 80px 0;
+    font-size: 90px;
+    text-transform: uppercase;
+}
+.section p {
+    margin: 0 140px;
+    padding: 10px;
+}
+.section h4 {
     position: absolute;
-    color:#fff;
-    font-size: 20px;
-    margin: 25px;
+    left: 1000px;
+    top: 520px;
+    font-family: inter,serif;
+    z-index: 5;
+
 }
 
+.box1 {
+    position: absolute;
+    left: 950px;
+    bottom: 180px;
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+    background-color: gray;
+    z-index: 4;
+}
+.box2 {
+    position: absolute;
+    left: 820px;
+    bottom: 350px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: gray;
+    z-index: 3;
+}.box3 {
+     position: absolute;
+     right: 120px;
+     bottom: 100px;
+     width: 15%;
+     border-radius: 20px;
+     background-color: gray;
+    z-index: 1;
+ }
+
+ .box-player {
+     background-color: rgba(255, 173, 13, 1);
+     width: 20%;
+     height: 20vh;
+     border-radius: 20px;
+     margin: 20px 200px;
+ }
